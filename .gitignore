@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env/
+.venv/
+
+# Model weights / checkpoints
+*.weights
+*.pt
+*.pth
+*.h5
+*.pb
+*.onnx
+*.tflite
+checkpoints/
+weights/
+pretrained/
+
+# Datasets
+dataset/
+datasets/
+data/
+images/
+annotations/
+*.zip
+*.tar
+*.csv
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+tensorboard/
+runs/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Custom large files
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+results/
+output/
