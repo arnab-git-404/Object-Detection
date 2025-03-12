@@ -7,6 +7,9 @@ import argparse
 from matplotlib import pyplot as plt
 import urllib.request
 import ssl
+import keyboard
+
+
 
 class ObjectTracker:
     def __init__(self, object_class=None, confidence_threshold=0.5):
@@ -364,11 +367,15 @@ def main():
         cv2.imshow("Object Tracking", frame_with_trajectories)
         
         # Check for key press
-        key = cv2.waitKey(1) & 0xFF
+        key = cv2.waitKey(10) & 0xFF
         if key == ord('q'):
             print("Stopping tracking...")
             break
     
+        if keyboard.is_pressed('q'):  # Alternative key detection
+            print("Stopping tracking...")
+            break
+
     # Release resources
     cap.release()
     cv2.destroyAllWindows()
