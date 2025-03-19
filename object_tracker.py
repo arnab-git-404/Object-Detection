@@ -339,6 +339,7 @@ def main():
             print("Error: Failed to capture frame.")
             break
         
+        
         # Detect objects
         detected_objects = tracker.detect_objects(frame)
         
