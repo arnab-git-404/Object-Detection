@@ -342,7 +342,7 @@ def main():
         # Detect objects
         detected_objects = tracker.detect_objects(frame)
         
-        # Update trajectorie
+        # Update trajectories
         tracker.update_trajectories(detected_objects)
         
         # Draw bounding boxes and trajectories
